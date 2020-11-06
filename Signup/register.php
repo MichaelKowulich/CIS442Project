@@ -18,7 +18,7 @@ VALUES ('$uname', '$password', '$email', '$address', '$name')";
 $result = mysqli_query($conn, $sql);
 if ($result)
 {
-    header("Location: ../index.html");
+    header("Location: ../index.php");
 }
 else {
     echo "Error :".$sql;

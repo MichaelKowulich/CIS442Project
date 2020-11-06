@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +11,7 @@
     <link rel="stylesheet" href="./style.css">
     <script>
         function homescreen() {
-            window.location.href = "index.html";
+            window.location.href = "index.php";
         }
     </script>
     <title>Hack N` Snacks</title>
@@ -17,9 +20,9 @@
     <header>
        <h1 class="logo" onclick="homescreen()">Hack N` Snacks</h1>
         <ul class="nav">
-        <li class="navlink"><a href="index.html">Home</a></li>
+        <li class="navlink"><a href="index.php">Home</a></li>
         <li class="navlink"><a href="#">About</a></li>
-        <li class="navlink"><a href="Signup/signup.html">Login / Sign Up</a></li>
+        <li class="navlink"><a href="Signup/signup.php">Login / Sign Up</a></li>
         </ul>
     </header><br><br><br><br><br><br><br><br><br><br><br>
     <div class="centralize">

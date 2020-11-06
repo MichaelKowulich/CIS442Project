@@ -19,7 +19,7 @@ if(mysqli_num_rows($result) > 0) {
         $_SESSION['email'] = $email;
         $_SESSION['username'] = $email;
     }
-    header("Location: ../Dashboard/dashboard.html");
+    header("Location: ../Dashboard/dashboard.php");
 } else {
     echo "Invald Username or Password";
 }

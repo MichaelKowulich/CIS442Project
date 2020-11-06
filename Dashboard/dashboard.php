@@ -29,7 +29,7 @@
              <ul class='nav'>
              <li class='navlink'><a href='../index.php'>Home</a></li>
              <li class='navlink'><a href='#'>About</a></li>
-             <li class='navlink'><a href='#'>My Account</a></li>
+             <li class='navlink'><a href='../Account/account_overview.php'>My Account</a></li>
              <li class='navlink'><a href='#'>Shop</a></li>
              <li class='navlink'><a href='../Signup/logout.php'>Logout</a></li>
              </ul>

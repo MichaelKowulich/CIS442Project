@@ -22,7 +22,15 @@
         <ul class="nav">
         <li class="navlink"><a href="index.php">Home</a></li>
         <li class="navlink"><a href="#">About</a></li>
-        <li class="navlink"><a href="Signup/signup.php">Login / Sign Up</a></li>
+        <?php
+            if(!isset($_SESSION["username"])) {
+                echo '<li class="navlink"><a href="Signup/signup.php">Login / Sign Up</a></li>';
+            } else {
+                $username = $_SESSION['username'];
+                echo "<li class='navlink'><a href='Account/account_overview.php'>$username's Account</a></li>";
+                echo "<li class='navlink'><a href='Signup/logout.php'>Logout</a></li>";
+            }
+        ?>
         </ul>
     </header><br><br><br><br><br><br><br><br><br><br><br>
     <div class="centralize">

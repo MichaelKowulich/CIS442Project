@@ -17,7 +17,7 @@ if(mysqli_num_rows($result) > 0) {
         session_start();
         $_SESSION['id'] = $id;
         $_SESSION['email'] = $email;
-        $_SESSION['username'] = $email;
+        $_SESSION['username'] = $username;
     }
     header("Location: ../Dashboard/dashboard.php");
 } else {

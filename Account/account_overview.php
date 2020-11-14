@@ -39,6 +39,9 @@
   <label for="CCV">CCV</label><br>
   <input type="text" id="CCV" name="CCV" size="15" maxlength="30"><br>
      
+     
+<button type="submit">Submit Changes</button>
+<button type="reset">Cancel</button> 
    
         </form>
   

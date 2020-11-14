@@ -33,6 +33,12 @@
   <label for="baddress">Billing Address</label><br>
   <input type="text" id="baddress" name="baddress" size="15" maxlength="30"><br>
      
+  <label for="cnumber">Card Number</label><br>
+  <input type="text" id="cnumber" name="cnumber" size="15" maxlength="30"><br>
+     
+  <label for="CCV">CCV</label><br>
+  <input type="text" id="CCV" name="CCV" size="15" maxlength="30"><br>
+     
    
         </form>
   

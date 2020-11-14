@@ -22,6 +22,7 @@
   <input type="text" id="state" name="state" size="15" maxlength="30"><br>
   <label for="zip">Zip Code</label><br>
   <input type="text" id="zip" name="zip" size="15" maxlength="30"><br>
+        </form>
   
     </body>
 </html>

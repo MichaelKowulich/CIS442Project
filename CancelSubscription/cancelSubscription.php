@@ -9,16 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="../Dashboard/dashboard.css">
     <script>
         function homescreen() {
             window.location.href = "../index.php";
-        }
-        function shop() {
-            window.location.href = "../Shop/shop.php"
-        }
-        function cancelScreen() {
-            window.location.href = "../CancelSubscription/cancelSubscription.php"
         }
     </script>
     <title>Hack N` Snacks Dashboard</title>
@@ -40,9 +34,9 @@
              <li class='navlink'><a href='../Shop/shop.php'>Shop</a></li>
              <li class='navlink'><a href='../Signup/logout.php'>Logout</a></li>
              </ul>
-            </header><br><br><br><br>
+            </header><br><br>
         <div class='centralize'>
-            <h1 class='jumbo'>My Subscriptions</h1>";
+            <h1 class='jumbo'>Cancel A Subscription</h1>";
         }
         ?>
         <?php
@@ -55,18 +49,22 @@
             $sql = "SELECT * FROM subscription WHERE userId='$uid' AND status='Active'";
             $result = mysqli_query($conn, $sql);
             if(mysqli_num_rows($result) > 0) {
+                echo "<div class='subBox'>
+                <form action='cancel.php' method='POST' onsubmit='return verify()'>
+                    <img src='../img/box.png' alt='HackNSnacks Box'><br><br><br>
+                    <p> Please select a subscription to cancel: </p>
+                    <br>
+                    <select id='subscriptions' name='subscriptions'>
+                        <option value=''>Please select a subscription</option> ";
                 while($row = mysqli_fetch_assoc($result)) {
                     $type = $row["type"];
                     $cost = $row["cost"];
-                    echo "<div class='subBox'>
-                            <img src='../img/box.png' alt='HackNSnacks Box'><br><br><br>
-                            <p>Type Of Subscription: $type</p>
-                            <p>Cost: $cost </p>
-                            <br>
-                            <br>
-                            <button type='button' class='cancel-btn' onclick='cancelScreen()'>Cancel Subscription </button>
-                         </div>";
+                    echo "<option value='$type'>$type ~ \$$cost</option>";
                 }
+                echo "</select><br><br><br><br><br><br>
+                                <button type='submit' class='cancel-btn'>Cancel Subscription </button>
+                            </form>
+                         </div>";
             } else {
                 echo "<div class='subBox'>
                             <img src='../img/box.png' alt='HackNSnacks Box'><br><br><br>
@@ -74,13 +72,13 @@
                             <p>Click the button below to browse subscription options.</p>
                             <br>
                             <br>
-                            <button type='button' class='cancel-btn' onclick='shop()'> Shop </button>
+                            <button type='button' class='cancel-btn' onclick='cancelScreen()'> Shop </button>
                          </div>";
             }
         ?>
         <?php
         echo "</div>";
         ?>
-    
+    <script src="cancel.js"></script>
 </body>
 </html>

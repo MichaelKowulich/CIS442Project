@@ -8,7 +8,7 @@
         <h1> Account Settings </h1>
     </head>
     <body>
- <form action="http://www.itss.brockport.edu/~mkowu1/cis442/CIS442PROJECT/Account/account_overview.php" onsubmit="return validateReg()" method="POST" id="Account" class="input-group2">
+ <form action="http://www.itss.brockport.edu/~mkowu1/cis442/CIS442PROJECT/Account/update_account.php" onsubmit="return validateReg()" method="POST" id="Account" class="input-group">
   
   <label for="Name">Name</label><br>
   <input type="text" id="Name" name="Name" size="15" maxlength="30"><br>

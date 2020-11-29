@@ -3,6 +3,7 @@
 ?>
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="../style.css">
     <head>
         <h1> Account Settings </h1>
     </head>

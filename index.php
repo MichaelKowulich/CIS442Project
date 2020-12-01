@@ -13,6 +13,9 @@
         function homescreen() {
             window.location.href = "index.php";
         }
+        function about() {
+            window.location.href = "About/about.php";
+        }
     </script>
     <title>Hack N` Snacks</title>
 </head>
@@ -23,7 +26,7 @@
         <?php
             if(!isset($_SESSION["username"])) {
                 echo '<li class="navlink"><a href="index.php">Home</a></li>';
-                echo '<li class="navlink"><a href="#">About</a></li>';
+                echo '<li class="navlink"><a href="About/about.php">About</a></li>';
                 echo '<li class="navlink"><a href="Signup/signup.php">Login / Sign Up</a></li>';
             } else {
                 $username = $_SESSION['username'];
@@ -39,7 +42,7 @@
         <h1 class="jumbo">Hack N` Snacks</h1>
         <p class="jumbotron">Ready to prep meal kits at your doorstep since 2020</p>
         <br><br><br>
-        <button class="button button2"> Learn More </button>
+        <button class="button button2" onclick="about()"> Learn More </button>
     </div>
 </body>
 </html>

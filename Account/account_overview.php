@@ -21,7 +21,7 @@
             <h1 class='logo' onclick='homescreen()'>Hack N` Snacks</h1>
              <ul class='nav'>
              <li class='navlink'><a href='../index.php'>Home</a></li>
-             <li class='navlink'><a href='../about.php'>About</a></li>
+             <li class='navlink'><a href='../About/about.php'>About</a></li>
              <li class='navlink'><a href='../Dashboard/dashbaord.php'>Dashboard</a></li>
              <li class='navlink'><a href='../Shop/shop.php'>Shop</a></li>
              <li class='navlink'><a href='../Signup/logout.php'>Logout</a></li>

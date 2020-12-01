@@ -3,48 +3,65 @@
 ?>
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="../style.css">
+    <head>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="Update_account.css">
+    </head>
     <body>
-    <header> <ul class='nav'>
+    <?php
+        if (!isset($_SESSION["username"])) {
+            echo "Error: You are not logged in!";
+            exit();
+        }
+        else {
+            #If User is logged in, display dashboard.
+            echo "<header>
+            <h1 class='logo' onclick='homescreen()'>Hack N` Snacks</h1>
+             <ul class='nav'>
              <li class='navlink'><a href='../index.php'>Home</a></li>
-             <li class='navlink'><a href='#'>About</a></li>
-             <li class='navlink'><a href='../Account/account_overview.php'>My Account</a></li>
+             <li class='navlink'><a href='../about.php'>About</a></li>
+             <li class='navlink'><a href='../Dashboard/dashbaord.php'>Dashboard</a></li>
              <li class='navlink'><a href='../Shop/shop.php'>Shop</a></li>
              <li class='navlink'><a href='../Signup/logout.php'>Logout</a></li>
              </ul>
             </header><br><br><br><br>
         <div class='centralize'>
-            <h1 class='jumbo'>My Account</h1>
-
- <form action="http://www.itss.brockport.edu/~nstau1/cis442/CIS442Project/Account/update_account.php" onsubmit="return validateReg()" method="POST" id="Account" class="input-group">
-  
-  <label for="Uname">Username</label><br>
-  <input type="text" id="uname" name="uname"><br>
-
-  <label for="address">Street Address</label><br>
-  <input type="text" id="address" name="address"><br>
-  
-  <label for="eaddress">Email Address</label><br>
-  <input type="text" id="eaddress" name="eaddress"><br>
-  
-  <label for="pnumber">Phone Number</label><br>
-  <input type="text" id="pnumber" name="pnumber"><br>
-  
-  <label for="city">City</label><br>
-  <input type="text" id="city" name="city"><br>
-  
-  <label for="state">State</label><br>
-  <input type="text" id="state" name="state"><br>
-  
-  <label for="zip">Zip Code</label><br>
-  <input type="text" id="zip" name="zip"><br>
-  
-  <label for="baddress">Billing Address</label><br>
-  <input type="text" id="baddress" name="baddress"><br>
- 
-<button type="submit">Submit Changes</button>
-<button type="reset">Cancel</button> 
-   
- </form>
+            <h1 class='jumbo'>My Account</h1>";
+        }
+?>
+<?php 
+if (!isset($_SESSION['username'])) {
+    exit;
+}
+require_once('../connection.php');
+$uname = $_SESSION['username'];
+$uid = $_SESSION['id'];
+$sql = "SELECT * FROM user WHERE id='$uid'";
+$result = mysqli_query($conn, $sql);
+if(mysqli_num_rows($result) > 0) {
+    while($row = mysqli_fetch_assoc($result)) {
+        $address = $row["address"];
+        $uname = $row["username"];
+        $eaddress = $row["email"];
+        $name = $row["name"];
+        echo " 
+        <img src='../img/pfp.png' alt='profile picture'>
+        <form action='update_account.php' method='POST'>
+            <label for='uname'> Username </label>
+                <input type='text' name='uname' maxlength='30' pattern='[a-zA-Z0-9]{7-50}'' minlength='1' placeholder='User ID' value='$uname' pattern='' required><br><br>
+            <label for='address'>Street address </label>
+                <input type='text' name='address' value='$address' maxlength='100' pattern='[a-z A-Z0-9,-]{7-100}' placeholder='Full Address' required><br><br>
+            <label for='eaddress'>Email address </label>
+                <input type='email' maxlength='50' name='email' value='$eaddress' required><br><br>
+            <label for='name'>Name </label>
+                <input type='text' name='name' maxlength='50' value='$name' minlength='1' pattern='[a-z A-Z]{7-50}' placeholder='Full Name' required><br><br>
+            <button class='button' type='submit'>Submit Changes</button>
+        </form>";
+    }   
+}  
+?>
+    <?php
+        echo "</div>";
+    ?>
     </body>
 </html>

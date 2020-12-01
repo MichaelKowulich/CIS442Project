@@ -8,6 +8,11 @@
         <meta name="viewport" content="width=device-width", initial-scale=1.0>
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="Update_account.css">
+        <script>
+            function homescreen() {
+                window.location.href = "../index.php";
+            }
+        </script>
     </head>
     <body>
     <?php

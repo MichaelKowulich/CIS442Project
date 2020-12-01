@@ -50,7 +50,11 @@
                             <br>
                             <form action='catalog.php' method='POST' onsubmit='return validateShop()'>
                             <label class='container'>All Subscriptions
-                                <input type='checkbox' id='box' name='all' value='yes' checked='checked'>
+                                <input type='checkbox' id='box' name='all' value='yes'>
+                                <span class='checkmark'></span>
+                            </label>
+                            <label class='container'>Standard
+                                <input type='checkbox' id='box' name='classic' value='yes'>
                                 <span class='checkmark'></span>
                             </label>
                             <label class='container'>Vegan
@@ -65,10 +69,14 @@
                                 <input type='checkbox' id='box' name='gluten-free' value='yes'>
                                 <span class='checkmark'></span>
                             </label>
+                            <label class='container'>Meat-Eater
+                                <input type='checkbox' id='box' name='meat-eater' value='yes'>
+                                <span class='checkmark'></span>
+                            </label>
                             <label class='container'>Pescatarian
                                 <input type='checkbox' id='box' name='pescatarian' value='yes'>
                                 <span class='checkmark'></span>
-                            </label><br><br>
+                            </label><br>
                             <button type='submit' class='submit-btn'>Search</button>
                       </div>";
             }

@@ -60,8 +60,13 @@
                 $count = 0;
                 $sql .= "AND ";
                 if($_POST['vegan'] == 'yes') {
-                    if($count > 1){ $sql .= "OR ";}
+                    if($count >= 1){ $sql .= "OR ";}
                     $sql .= "dietary='Vegan' ";
+                    $count = $count + 1;
+                }
+                if($_POST['classic'] == 'yes') {
+                    if($count >= 1){ $sql .= "OR ";}
+                    $sql .= "dietary='Classic' ";
                     $count = $count + 1;
                 }
                 if($_POST['vegetarian'] == 'yes') {
@@ -72,6 +77,11 @@
                 if($_POST['gluten-free'] == 'yes') {
                     if($count >= 1){ $sql .= "OR ";}
                     $sql .= "dietary='Gluten-Free' ";
+                    $count = $count + 1;
+                }
+                if($_POST['meat-eater'] == 'yes') {
+                    if($count >= 1){ $sql .= "OR ";}
+                    $sql .= "dietary='Meat-Eater' ";
                     $count = $count + 1;
                 }
                 if($_POST['pescatarian'] == 'yes') {

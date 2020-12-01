@@ -12,5 +12,9 @@
     <link rel="stylesheet" href="about.css">
     <title>Hack N` Snacks About Page</title>
 </head>
+<body>
+    <h1> About Hack n' Snacks </h1> 
 
+    <h1> How It Works</h1>
+</body>
 </html>

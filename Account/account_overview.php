@@ -4,6 +4,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale=1.0>
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="Update_account.css">
     </head>
@@ -47,8 +49,6 @@ if(mysqli_num_rows($result) > 0) {
         echo " 
         <img src='../img/pfp.png' alt='profile picture'>
         <form action='update_account.php' method='POST'>
-            <label for='uname'> Username </label>
-                <input type='text' name='uname' maxlength='30' pattern='[a-zA-Z0-9]{7-50}'' minlength='1' placeholder='User ID' value='$uname' pattern='' required><br><br>
             <label for='address'>Street address </label>
                 <input type='text' name='address' value='$address' maxlength='100' pattern='[a-z A-Z0-9,-]{7-100}' placeholder='Full Address' required><br><br>
             <label for='eaddress'>Email address </label>

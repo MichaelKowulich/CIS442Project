@@ -10,7 +10,6 @@ date_default_timezone_set('EST');
 $type = $_POST['dietary'];
 $Dateordered = date("Y-m-d H:i:s");
 $DateShipped = new DateTime('tomorrow');
-$DateShipped->format('Y-m-d H:i:s');
 $userId = $_SESSION["id"];
 $cost = 0;
 $boxId = 0;

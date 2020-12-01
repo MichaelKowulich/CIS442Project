@@ -6,11 +6,11 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 }
 
 $userid = (int)$_SESSION["id"];
-$type = $_POST["subscriptions"];
+$Sid = $_POST["subscriptions"];
 
 $sql = "UPDATE subscription
 SET Status = 'Inactive'
-WHERE userId = $userid AND type = '$type'";
+WHERE userId = $userid AND id = '$Sid'";
 
 $result = mysqli_query($conn, $sql);
 if ($result)

@@ -59,7 +59,8 @@
                 while($row = mysqli_fetch_assoc($result)) {
                     $type = $row["type"];
                     $cost = $row["cost"];
-                    echo "<option value='$type'>$type ~ \$$cost</option>";
+                    $Sid = $row["id"];
+                    echo "<option value='$Sid'>$type ~ \$$cost</option>";
                 }
                 echo "</select><br><br><br><br><br><br>
                                 <button type='submit' class='cancel-btn'>Cancel Subscription </button>

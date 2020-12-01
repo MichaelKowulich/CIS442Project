@@ -58,13 +58,14 @@
                 while($row = mysqli_fetch_assoc($result)) {
                     $type = $row["type"];
                     $cost = $row["cost"];
+                    $subId = $row["id"];
                     echo "<div class='subBox'>
                             <img src='../img/box.png' alt='HackNSnacks Box'><br><br><br>
                             <p>Type Of Subscription: $type</p>
                             <p>Cost: $cost </p>
                             <br>
                             <br>
-                            <button type='button' class='cancel-btn' onclick='cancelScreen()'>Cancel Subscription </button>
+                            <button type='button' class='cancel-btn' onclick='cancelScreen()'> Cancel Subscription </button>
                          </div>";
                 }
             } else {

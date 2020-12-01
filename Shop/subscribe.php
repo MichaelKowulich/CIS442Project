@@ -5,9 +5,12 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
     exit;
 }
 
+date_default_timezone_set('EST');
+
 $type = $_POST['dietary'];
-$Dateordered = date('m/d/Y', time()+86400);
-$Dateshipped = date('m/d/Y', time()+86400);
+$Dateordered = date("Y-m-d H:i:s");
+$DateShipped = new DateTime('tomorrow');
+$DateShipped->format('Y-m-d H:i:s');
 $userId = $_SESSION["id"];
 $cost = 0;
 $boxId = 0;

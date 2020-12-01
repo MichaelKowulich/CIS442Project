@@ -8,6 +8,23 @@
         <h1> Account Settings </h1>
     </head>
     <body>
+        <?php
+
+    echo "<header>
+            <h1 class='logo' onclick='homescreen()'>Hack N` Snacks</h1>
+             <ul class='nav'>
+             <li class='navlink'><a href='../index.php'>Home</a></li>
+             <li class='navlink'><a href='#'>About</a></li>
+             <li class='navlink'><a href='../Account/account_overview.php'>My Account</a></li>
+             <li class='navlink'><a href='../Shop/shop.php'>Shop</a></li>
+             <li class='navlink'><a href='../Signup/logout.php'>Logout</a></li>
+             </ul>
+            </header><br><br><br><br>
+        <div class='centralize'>
+            <h1 class='jumbo'>My Subscriptions</h1>";
+        }
+        ?>
+        
  <form action="http://www.itss.brockport.edu/~mkowu1/cis442/CIS442PROJECT/Account/update_account.php" onsubmit="return validateReg()" method="POST" id="Account" class="input-group">
   
   <label for="Name">Name</label><br>

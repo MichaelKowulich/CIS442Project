@@ -44,7 +44,7 @@
         something you want to try. 
         <br><br><br><br><br>
     <h1 class="jumbo">About Hack n' Snacks </h1> 
-    <p class="jumbotron" text-align: justify;>Hack n’ Snacks provides various meals of all kinds to consumers by the click of a few buttons! 
+    <p class="jumbotron">Hack n’ Snacks provides various meals of all kinds to consumers by the click of a few buttons! 
         They are easy to make, nutritious, and most definitely delicious. Hack n’ Snacks is looking to help the parents, 
         families, or anyone in general, who is struggling with the current pandemic we all are living through. We wanted to 
         create this easy, affordable, meal service that you can order online so that you can avoid the hassle of leaving the 

@@ -18,5 +18,5 @@ if ($result)
     header("Location: ../Dashboard/dashboard.php");
 }
 else {
-    echo "Error :".$sql;
+    echo "Error : Could not cancel subscription, please contact support at 555-5555";
 }

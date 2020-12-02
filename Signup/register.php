@@ -21,5 +21,5 @@ if ($result)
     header("Location: ../index.php");
 }
 else {
-    echo "Error :".$sql;
+    echo "Error : User already exists with name $uname";
 }

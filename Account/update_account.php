@@ -18,5 +18,5 @@ if ($result)
     header("Location: ../Dashboard/dashboard.php");
 }
 else {
-    echo "Error :".$sql;
+    echo "Error : Could not update account, please try again later";
 }

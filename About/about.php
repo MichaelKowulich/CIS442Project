@@ -15,22 +15,25 @@
             window.location.href = "../index.php";
         }
     </script>
-    <title>Hack N' Snacks About Page</title>
+<title>Hack N' Snacks About Page</title>
 </head>
 <body>
 <header>
-<?php
+       <h1 class="logo" onclick="homescreen()">Hack N` Snacks</h1>
+        <ul class="nav">
+ <?php
             if(!isset($_SESSION["username"])) {
-                echo '<li class="navlink"><a href="index.php">Home</a></li>';
-                echo '<li class="navlink"><a href="Signup/signup.php">Login / Sign Up</a></li>';
+                echo '<li class="navlink"><a href="../index.php">Home</a></li>';
+                echo '<li class="navlink"><a href="../Signup/signup.php">Login / Sign Up</a></li>';
             } else {
                 $username = $_SESSION['username'];
-                echo "<li class='navlink'><a href='Dashboard/dashboard.php'>Dashboard</a></li>";
-                echo "<li class='navlink'><a href='Shop/shop.php'>Shop</a></li>";
-                echo "<li class='navlink'><a href='Account/account_overview.php'>$username's Account</a></li>";
-                echo "<li class='navlink'><a href='Signup/logout.php'>Logout</a></li>";
+                echo "<li class='navlink'><a href='../Dashboard/dashboard.php'>Dashboard</a></li>";
+                echo "<li class='navlink'><a href='../Shop/shop.php'>Shop</a></li>";
+                echo "<li class='navlink'><a href='../Account/account_overview.php'>$username's Account</a></li>";
+                echo "<li class='navlink'><a href='../Signup/logout.php'>Logout</a></li>";
             }
         ?>
+      </ul>
 </header><br><br><br><br>
 <div class="centralize">
     <h1 class="jumbo">About Hack n' Snacks </h1> 

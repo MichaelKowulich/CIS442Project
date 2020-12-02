@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="about.css">
-    <title>Hack N` Snacks About Page</title>
+    <title>Hack n' Snacks About Page</title>
 </head>
 <body>
+<div class="centralize">
     <h1 class="jumbo">About Hack n' Snacks </h1> 
     <p class="jumbotron">Hack n’ Snacks provides various meals of all kinds to consumers by the click of a few buttons! 
         They are easy to make, nutritious, and most definitely delicious. Hack n’ Snacks is looking to help the parents, 
@@ -25,6 +26,7 @@
     <p class ="jumbotron"> The goal is for you to find the subscription that best suits you. Create a great, customizable 
         account that will keep your subscription. Then, check out the options: Standard (No food allergies or restrictions), 
         Vegan, Vegetarian, Gluten-Free, Meat-Eater and Pescatarian. Select a subscription that fits how you eat or maybe 
-        something you want to try. 
+            something you want to try. 
+</div>
 </body>
 </html>

@@ -30,7 +30,7 @@ if ($result)
     echo '<script language="javascript">';
     echo 'alert("Subscription Successful")';
     echo '</script>';
-    header("Location: ../index.php");
+    header("Location: ../Dashboard/dashboard.php");
 }
 else {
     echo "Error :".$sql;

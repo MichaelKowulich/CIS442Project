@@ -101,7 +101,7 @@
                             <p>Cost: $cost USD</p>
                             <br>
                             <br>
-                            <form action='subscribe.php' method='POST'>
+                            <form action='itemdetail.php' method='POST'>
                                 <button type='submit' name='dietary' value='$type' class='submit-btn'> Subscribe </button>
                             </form>
                          </div>";

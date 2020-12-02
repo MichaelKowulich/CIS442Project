@@ -1,11 +1,12 @@
-
 .paragraph {
-    width: 100%;
+    width: 90%;
     height: 400;
-    margin: 15px;
+    display: inline-block;
     color: white;
-    background: rgba( 245, 245, 245, 0.3);
+    margin: 6% auto;
+    position: relative;
     text-align: center;
     padding-bottom: 15px;
     padding-top: 15px;
+    overflow: hidden;
 }

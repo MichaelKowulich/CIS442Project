@@ -35,7 +35,8 @@
         ?>
       </ul>
 </header><br><br><br><br>
-<div class="paragraph">
+<div class="centralize">
+    <div class='paragraph'>
     <h1 class="jumbo">About Hack n' Snacks </h1> 
     <p class="jumbotron" text-align: justify;>Hack n’ Snacks provides various meals of all kinds to consumers by the click of a few buttons! 
         They are easy to make, nutritious, and most definitely delicious. Hack n’ Snacks is looking to help the parents, 
@@ -43,14 +44,15 @@
         create this easy, affordable, meal service that you can order online so that you can avoid the hassle of leaving the 
         house. We also were aware of parents and families having to feed their kids who were home from school. The meals we 
         wanted to sell were trying to be geared towards that very situation; to make it easier, quicker, and more affordable. 
-        This was so, a parent working from home would not have to worry about not having lunch or dinner every single night. 
+        This was so a parent working from home would not have to worry about not having lunch or dinner every single night. 
         <br><br><br><br><br>
-    <h1 class="jumbo" text-align: justify;>How It Works</h1>
+    <h1 class="jumbo">How It Works</h1>
     <p class ="jumbotron"> The goal is for you to find the subscription that best suits you. Create a great, customizable 
         account that will keep your subscription. Then, check out the options: Standard (No food allergies or restrictions), 
         Vegan, Vegetarian, Gluten-Free, Meat-Eater and Pescatarian. Select a subscription that fits how you eat or maybe 
         something you want to try. 
     <br><br><br>
+    </div>
 </div>
 </body>
 </html>

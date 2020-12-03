@@ -42,6 +42,7 @@
         account that will keep your subscription. Then, check out the options: Standard (No food allergies or restrictions), 
         Vegan, Vegetarian, Gluten-Free, Meat-Eater and Pescatarian. Select a subscription that fits how you eat or maybe 
         something you want to try.Then await its arrival and dig in! 
+        <br><br><br>
 <div class="row">
     <div class="column">
         <img src="login.png" alt="Login" style="width:10em; height:10em;" >
@@ -53,7 +54,7 @@
         <img src="payment.png" alt="Payment" style="width:10em; height:10em;">
     </div>
 </div>
-        <br><br><br><br><br>
+        <br><br><br>
     <h1 class="jumbo">About Hack n' Snacks </h1> 
     <p class="jumbotron">Hack n’ Snacks provides various meals of all kinds to consumers by the click of a few buttons! 
         They are easy to make, nutritious, and most definitely delicious. Hack n’ Snacks is looking to help the parents, 

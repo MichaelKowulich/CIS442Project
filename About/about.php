@@ -45,13 +45,13 @@
         <br><br><br>
 <div class="row">
     <div class="column">
-        <img src="login.png" alt="Login" style="width:10em; height:10em;" >
+        <img src="../img/login.png" alt="Login" style="width:10em; height:10em;" >
     </div>
     <div class="column">
-        <img src="checkbox.jpg" alt="Check" style="width:10em; height:10em;">
+        <img src="../img/checkbox.jpg" alt="Check" style="width:10em; height:10em;">
     </div>
     <div class="column">
-        <img src="payment.png" alt="Payment" style="width:10em; height:10em;">
+        <img src="../img/payment.png" alt="Payment" style="width:10em; height:10em;">
     </div>
 </div>
         <br><br><br>

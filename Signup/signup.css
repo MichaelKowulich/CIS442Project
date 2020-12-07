@@ -1,9 +1,10 @@
+/*setting all elements to have zero margin/padding*/
 *{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-
+/*the background CSS for this page*/
 .hero {
     height: 100%;
     width: 100%;
@@ -12,7 +13,7 @@
     background-size: cover;
     position: absolute;
 }
-
+/*the basic form box to hold the rest of the information*/
 .form-box{
     width: 380px;
     height: 480px;
@@ -24,7 +25,7 @@
     border-radius: 3px;
     overflow: hidden;
 }
-
+/*CSS for the login/register box*/
 .button-box{
     width: 220px;
     margin: 35px;
@@ -32,7 +33,7 @@
     box-shadow: 0 0 20px 9px #ff61241f;
     border-radius: 30px;
 }
-
+/*css to show the switch on the login/register box*/
 .toggle-btn {
     padding: 10px 30px;
     cursor: pointer;
@@ -41,7 +42,7 @@
     outline: none;
     position: relative;
 }
-
+/* this is the button css for the login/register switch*/
 #btn {
     top: 0;
     left: 0;
@@ -52,21 +53,21 @@
     border-radius: 50px;
     transition: .5s;
 }
-
+/*this is css for the login page */
 .input-group{
     top: 180px;
     position: absolute;
     width: 280px;
     transition: .5s;
 }
-
+/* this is the css the register page*/
 .input-group2{
     top: 75px;
     position: absolute;
     width: 280px;
     transition: .5s;
 }
-
+/*this is css for the required inputs */
 .input-field{
     width: 100%;
     padding: 10px 0;
@@ -78,7 +79,7 @@
     outline: none;
     background: transparent;
 }
-
+/*css for the submit button*/
 .submit-btn{
     width: 85%;
     padding: 10px 30px;
@@ -90,21 +91,21 @@
     outline: none;
     border-radius: 30px;
 }
-
+/*css for the check box */
 .check-box {
     margin: 30px 3px 30px 0;
 }
-
+/*css for the <label> tags*/
 label {
     color: #777;
     font-size: 12px;
     bottom: 68px;
 }
-
+/*places the login on the left of the switch*/
 #login{
     left: 50px;
 }
-
+/*places the register on the left of the switch*/
 #register{
     left: 450px;
 }

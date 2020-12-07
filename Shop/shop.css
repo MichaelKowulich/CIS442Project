@@ -1,3 +1,4 @@
+/*this is the CSS for the subbox behind the subscription options */
 .subBox{
     width: 380px;
     height: 680px;
@@ -9,6 +10,7 @@
     border-radius: 3px;
     overflow: hidden;
 }
+/* this is the box that brings in the bar for the box photo and description*/
 .detailBox{
   width: 980px;
   height: 380px;
@@ -20,6 +22,7 @@
   border-radius: 3px;
   overflow: hidden;
 }
+/*the boxes that contain just the photo of the hack 'n snacks box, and also the product description*/
 .infoBox{
   width: 380px;
   height: 480px;
@@ -29,6 +32,7 @@
   padding: 5px;
   overflow: hidden;
 }
+/* displays each different option box*/
 .catalogBox{
     width: 380px;
     height: 480px;
@@ -41,6 +45,7 @@
     border-radius: 3px;
     overflow: hidden;
 }
+/* main display of the search queary results */
 .centerpiece {
     width: 100%;
     height: 400;
@@ -49,11 +54,13 @@
     padding-bottom: 15px;
     padding-top: 15px;
 }
+/*this is the <p> css for the text in the sub box*/
 p {
     text-align: center;
     letter-spacing: 2px;
     color: rgba(20, 18, 18, 0.918);
 }
+/* the format for the button that will submit whatever selection or subscription */
 .submit-btn{
     width: 85%;
     padding: 10px 30px;
@@ -65,7 +72,7 @@ p {
     outline: none;
     border-radius: 30px;
 }
-/* The container */
+/* The container for each option */
 .container {
     display: block;
     position: relative;

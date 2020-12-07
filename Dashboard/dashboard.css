@@ -1,3 +1,4 @@
+/*this is the sub box css*/
 .subBox{
     width: 380px;
     height: 480px;
@@ -9,11 +10,13 @@
     border-radius: 3px;
     overflow: hidden;
 }
+/*this is the <p> css for the text in the sub box*/
 p {
     text-align: center;
     letter-spacing: 2px;
     color: rgba(20, 18, 18, 0.918);
 }
+/* this is the CSS for the cancel button*/
 .cancel-btn{
     width: 85%;
     padding: 10px 30px;

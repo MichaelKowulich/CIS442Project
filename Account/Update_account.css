@@ -1,3 +1,4 @@
+/* formats buttons on account page. Same as in style.css*/
 .button {
     background-color: #232323;
     border: none;
@@ -12,6 +13,7 @@
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
+/* whatever text inputed goes to this format */
 input[type=text] {
     padding: 0;
     height: 30px;
@@ -23,6 +25,7 @@ input[type=text] {
     background-color: white;
     font-size: 16px;
 }
+/* whatever email inputed goes to this format */
 input[type=email] {
     padding: 0;
     height: 30px;
